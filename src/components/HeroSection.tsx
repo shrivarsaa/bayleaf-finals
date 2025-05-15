@@ -33,16 +33,30 @@ const HeroSection: React.FC = () => {
         ref={bgRef}
         className="absolute top-0 left-0 w-full h-full overflow-hidden z-0"
       >
+        {/* Desktop Video */}
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="absolute w-full h-full object-cover md:object-center object-[25%] min-h-screen min-w-full"
+          className="absolute w-full h-full object-cover hidden md:block"
         >
-          <source src="src\assests\desktop.MP4" type="video/mp4" />
+          <source src="/src/assests/desktop.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
+        {/* Mobile Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute w-full h-full object-cover md:hidden"
+        >
+          <source src="/src/assests/mobile.MP4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
         <div className="absolute inset-0 bg-black/10 z-0"></div>
       </div>
 
