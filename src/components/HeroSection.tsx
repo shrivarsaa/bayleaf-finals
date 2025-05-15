@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import { ArrowDown, Utensils, Quote } from 'lucide-react';
 import { motion } from 'framer-motion';
